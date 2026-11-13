@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#8b1d2c">
+    <meta
+      name="description"
+      content="Ask Innovate helps BU students find programs, people, funding, events, and startup resources."
+    >
+    <title>Ask Innovate | Innovate@BU resource finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="https://www.bu.edu/innovate/" target="_blank" rel="noopener noreferrer">
+          <span class="wordmark-mark" aria-hidden="true">i</span>
+          <span>Innovate<span class="wordmark-at">@</span>BU</span>
+        </a>
+        <a class="header-link" href="https://www.bu.edu/innovate/" target="_blank" rel="noopener noreferrer">
+          Visit Innovate@BU <span aria-hidden="true">↗</span>
+        </a>
+      </header>
+
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Your campus innovation guide</p>
+        <h1 id="page-title">Ask Innovate</h1>
+        <p class="hero-copy">
+          What can we help you find? Ask in your own words and get pointed to the right
+          program, person, event, or opportunity.
+        </p>
+      </section>
+
+      <section class="chat-panel" aria-label="Ask Innovate chatbot">
+        <div class="conversation" id="conversation" aria-live="polite" aria-relevant="additions text">
+          <article class="message assistant-message">
+            <div class="avatar" aria-hidden="true">i</div>
+            <div class="message-body">
+              <p>Hi! Tell me what you’re looking for, and I’ll help you find a place to start.</p>
+              <p class="message-note">Try one of these, or ask your own question:</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="suggestions" aria-label="Example questions">
+          <button type="button" class="suggestion">I have an idea but don’t know where to start</button>
+          <button type="button" class="suggestion">How do I find people interested in AI?</button>
+          <button type="button" class="suggestion">What funding opportunities are available?</button>
+          <button type="button" class="suggestion">How do I book time with a mentor?</button>
+        </div>
+
+        <form class="composer" id="chat-form">
+          <label class="sr-only" for="question">Ask a question</label>
+          <input
+            id="question"
+            name="question"
+            type="text"
+            placeholder="I’m interested in starting a social impact venture…"
+            autocomplete="off"
+            maxlength="500"
+            required
+          >
+          <button class="send-button" type="submit">
+            <span>Search</span>
+            <span aria-hidden="true">→</span>
+          </button>
+        </form>
+        <p class="privacy-note">A simple search of curated Innovate@BU resources. No sign-in needed.</p>
+      </section>
+
+      <footer class="site-footer">
+        <span>Built to help you navigate the Innovate@BU ecosystem.</span>
+        <a href="https://www.bu.edu/innovate/start-here/" target="_blank" rel="noopener noreferrer">
+          Explore all resources <span aria-hidden="true">↗</span>
+        </a>
+      </footer>
+    </main>
+  </body>
+</html>
